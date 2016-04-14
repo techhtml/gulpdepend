@@ -1,0 +1,17 @@
+{
+  "name": "gulpdepend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "techhtml",
+  "license": "ISC",
+  "bin": {
+    "gulpdepend": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "lodash": "^4.11.1",
+    "node-cmd": "^1.1.1",
+    "promise": "^7.1.1"
+  }
+}

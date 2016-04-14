@@ -1,12 +1,16 @@
 {
   "name": "gulpdepend",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "fine gulp dependencies and install modules",
   "main": "index.js",
   "author": "techhtml",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "gulpdepend": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techhtml/gulpdepend.git"
   },
   "dependencies": {
     "commander": "^2.9.0",

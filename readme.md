@@ -10,6 +10,3 @@ npm install -g gulpdepend
 ```bash
 gulpdepend gulpfile.js
 ```
-
-## License
-  [MIT](LICENSE)

@@ -1,6 +1,6 @@
 {
   "name": "gulpdepend",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "find gulp dependencies and install modules",
   "main": "index.js",
   "author": "techhtml",

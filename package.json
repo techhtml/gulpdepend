@@ -1,7 +1,7 @@
 {
   "name": "gulpdepend",
-  "version": "0.0.3",
-  "description": "fine gulp dependencies and install modules",
+  "version": "0.0.5",
+  "description": "find gulp dependencies and install modules",
   "main": "index.js",
   "author": "techhtml",
   "license": "MIT",

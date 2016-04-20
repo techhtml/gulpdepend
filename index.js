@@ -1,7 +1,7 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony
 'use strict';
 
-var program = require('commander'),
+let program = require('commander'),
     fs = require('fs'),
     _ = require('lodash'),
     cmd = require('node-cmd'),
@@ -15,7 +15,7 @@ function getFile(file) {
             let moduleList = '';
 
             _.eachRight(fileList, (item) => {
-                let reg = /(gulp-{0,1}\w*)/g;
+                let reg = /(gulp\S*)(?:')/g;
                 let res = item.match(reg)[0];
                 moduleList = moduleList + ' ' + res;
                 fileList.pop();
@@ -32,7 +32,7 @@ program
     .action((file) => {
         getFile(file).then(function(moduleList) {
             console.log("download modules" + moduleList);
-            cmd.run('npm install' + moduleList);
+            cmd.run('npm install' + moduleList ' --save-dev');
         })
     })
     .parse(process.argv);

@@ -1,12 +1,12 @@
 # gulpdepend
-걸프파일의 디펜던시를 파악해서 패키지를 install해주는 패키지입니다.
+find module dependencies of gruntfile.js and Install
 
-## 설치
+## installation
 ```bash
 npm install -g gulpdepend
 ```
 
-## 사용법
+## usage
 ```bash
 gulpdepend gulpfile.js
 ```

@@ -1,7 +1,7 @@
 {
   "name": "gulpdepend",
-  "version": "0.0.7",
-  "description": "find gulp dependencies and install modules",
+  "version": "0.1.0",
+  "description": "find module dependencies of gruntfile.js and Install",
   "main": "index.js",
   "author": "techhtml",
   "license": "MIT",

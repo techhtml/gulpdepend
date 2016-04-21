@@ -16,14 +16,14 @@ function getFile(file) {
 
             _.eachRight(fileList, (item) => {
                 let reg = /["'][a-zA-Z0-9-]*["']/;
-								let result = item.match(reg);
-								if(result) {
-									let res = result[0]
-									let specialReg = /['"]/g
-									res = res.replace(specialReg, '');
-									moduleList = moduleList + ' ' + res;
-								}
-								fileList.pop();
+                let result = item.match(reg);
+                if(result) {
+                    let res = result[0];
+                    let specialReg = /['"]/g;
+                    res = res.replace(specialReg, '');
+                    moduleList = moduleList + ' ' + res;
+                }
+                fileList.pop();
                 if(fileList.length === 0) {
                     resolve(moduleList);
                 }
